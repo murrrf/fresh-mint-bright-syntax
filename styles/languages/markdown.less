@@ -30,7 +30,7 @@
     }
 
     &.syntax--link {
-        color: @blue;
+        color: @color-link;
         text-decoration: underline;
     }
 
@@ -85,5 +85,13 @@
          }
       }
     }
+
+    &.syntax--line-break,
+    .invisible-character.trailing-whitespace {
+        color: @color-invisible-character;
+        background-color: @color-warning;
+    }
+
   }
+
 }
